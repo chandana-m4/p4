@@ -9,6 +9,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background: #ffffff;
     color: #111111;
@@ -23,19 +30,13 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-
     padding: 20px 10%;
-
     background: rgba(255, 255, 255, 0.95);
-
     backdrop-filter: blur(10px);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     z-index: 100;
-
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
@@ -69,12 +70,9 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-
     top: 0;
     left: 0;
-
     z-index: -1;
-
     background: #ffffff;
 }
 
@@ -84,20 +82,13 @@ body {
 
 .cursor-glow {
     position: fixed;
-
     width: 250px;
     height: 250px;
-
     background: rgba(125, 42, 232, 0.12);
-
     border-radius: 50%;
-
     filter: blur(70px);
-
     pointer-events: none;
-
     transform: translate(-50%, -50%);
-
     z-index: 999;
 }
 
@@ -106,8 +97,10 @@ body {
 ========================= */
 
 section {
+    width: 100%;
     min-height: 100vh;
     padding: 120px 10% 50px;
+    overflow: hidden;
 }
 
 /* =========================
@@ -116,11 +109,8 @@ section {
 
 .home {
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     gap: 50px;
 }
 
@@ -142,9 +132,7 @@ section {
 
 .home-content p {
     margin: 20px 0;
-
     line-height: 1.8;
-
     color: #444;
 }
 
@@ -154,41 +142,26 @@ section {
 
 .name {
     font-family: 'Cinzel', serif;
-
     font-size: 90px;
-
     font-weight: 700;
-
     color: #090112;
-
     letter-spacing: 6px;
-
     text-transform: uppercase;
-
     position: relative;
-
     display: inline-block;
-
     overflow: hidden;
-
     animation: slideName 2s ease;
 }
 
 .name::after {
     content: '';
-
     position: absolute;
-
     left: 0;
     bottom: -10px;
-
     width: 100%;
     height: 4px;
-
     background: #7d2ae8;
-
     border-radius: 20px;
-
     animation: lineShow 2s ease;
 }
 
@@ -220,22 +193,16 @@ section {
 
 .home-img {
     position: relative;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 }
 
 .home-img::before {
     content: '';
-
     position: absolute;
-
     width: 380px;
     height: 380px;
-
     border-radius: 50%;
 
     background:
@@ -255,29 +222,20 @@ section {
 
 .home-img::after {
     content: '';
-
     position: absolute;
-
     width: 350px;
     height: 350px;
-
     background: #ffffff;
-
     border-radius: 50%;
 }
 
 .home-img img {
     position: relative;
-
     width: 320px;
     height: 320px;
-
     object-fit: cover;
-
     border-radius: 50%;
-
     border: 8px solid #7d2ae8;
-
     z-index: 2;
 
     box-shadow:
@@ -314,30 +272,20 @@ section {
 .social-media a {
     width: 45px;
     height: 45px;
-
     display: inline-flex;
-
     justify-content: center;
     align-items: center;
-
     border: 2px solid #7d2ae8;
-
     border-radius: 50%;
-
     color: #7d2ae8;
-
     margin-right: 15px;
-
     font-size: 20px;
-
     transition: 0.3s;
 }
 
 .social-media a:hover {
     background: #7d2ae8;
-
     color: white;
-
     transform: translateY(-5px);
 }
 
@@ -347,19 +295,12 @@ section {
 
 .btn {
     display: inline-block;
-
     margin-top: 30px;
-
     padding: 12px 30px;
-
     background: #7d2ae8;
-
     color: white;
-
     border-radius: 30px;
-
     font-weight: 600;
-
     transition: 0.3s;
 }
 
@@ -376,11 +317,8 @@ section {
 
 .heading {
     text-align: center;
-
     font-size: 45px;
-
     margin-bottom: 60px;
-
     color: #111;
 }
 
@@ -403,23 +341,16 @@ section {
 
 .skill-box {
     padding: 40px;
-
     border: 2px solid #7d2ae8;
-
     border-radius: 20px;
-
     text-align: center;
-
     background: #ffffff;
-
     transition: 0.4s;
 }
 
 .skill-box:hover {
     transform: translateY(-10px);
-
     background: #7d2ae8;
-
     color: white;
 
     box-shadow:
@@ -428,7 +359,6 @@ section {
 
 .skill-box i {
     font-size: 60px;
-
     margin-bottom: 20px;
 }
 
@@ -438,42 +368,30 @@ section {
 
 .projects-wrapper {
     display: flex;
-
     align-items: flex-start;
-
     gap: 4rem;
-
     margin-top: 4rem;
 }
 
 .project-container {
     display: flex;
-
     flex-direction: column;
-
     gap: 2rem;
 }
 
 .project-box {
     position: relative;
-
     width: 420px;
-
     height: 250px;
-
     border-radius: 30px;
-
     overflow: hidden;
-
     cursor: pointer;
-
     transition: 0.4s ease;
 }
 
 .project-box img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
 }
 
@@ -488,7 +406,6 @@ section {
 
 .project-layer {
     position: absolute;
-
     inset: 0;
 
     background:
@@ -500,31 +417,24 @@ section {
         );
 
     display: flex;
-
     flex-direction: column;
-
     justify-content: flex-end;
-
     padding: 2rem;
-
     color: white;
 }
 
 .project-layer h4 {
     font-size: 2rem;
-
     margin-bottom: 0.5rem;
 }
 
 .project-layer p {
     font-size: 1rem;
-
     margin-bottom: 1rem;
 }
 
 .project-layer a {
     position: absolute;
-
     right: 25px;
     bottom: 25px;
 
@@ -534,28 +444,22 @@ section {
     border-radius: 50%;
 
     background: rgba(255, 255, 255, 0.15);
-
     backdrop-filter: blur(10px);
 
     border: 2px solid rgba(255, 255, 255, 0.4);
 
     display: flex;
-
     justify-content: center;
     align-items: center;
 
     color: white;
-
     font-size: 1.5rem;
-
     transition: 0.4s;
 }
 
 .project-layer a:hover {
     background: white;
-
     color: #7c3aed;
-
     transform: rotate(12deg) scale(1.1);
 }
 
@@ -564,34 +468,30 @@ section {
 ========================= */
 
 .certification-preview {
+    width: 100%;
     padding: 80px 10%;
-
     background: #ffffff;
+    overflow: hidden;
 }
 
 .cert-preview-content {
+    width: 100%;
     max-width: 1100px;
-
     min-height: 320px;
 
     margin: auto;
-
     padding: 50px;
 
     display: flex;
-
     align-items: center;
-
     gap: 40px;
 
     position: relative;
-
     overflow: hidden;
 
     background: #ffffff;
 
-    border: 2px solid #7d2ae8;
-
+    border: 2px solid rgba(125, 42, 232, 0.25);
     border-radius: 25px;
 
     box-shadow:
@@ -608,42 +508,52 @@ section {
         0 10px 40px rgba(125, 42, 232, 0.15);
 }
 
+/* CERTIFICATE ICON */
+
 .cert-icon {
     min-width: 110px;
-
+    width: 110px;
     height: 110px;
 
+    flex-shrink: 0;
+
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
-    border-radius: 20px;
+    border-radius: 50%;
 
-    background: #f4eaff;
+    background: #ffffff;
 
-    border: 2px solid #7d2ae8;
+    border: 3px solid #7d2ae8;
 
     box-shadow:
-        0 0 20px rgba(125, 42, 232, 0.2);
-}
+        0 0 20px rgba(125, 42, 232, 0.25),
+        inset 0 0 20px rgba(125, 42, 232, 0.08);
 
-.cert-icon i {
-    font-size: 55px;
-
-    color: #7d2ae8;
-}
-
-.cert-preview-text {
     position: relative;
-
     z-index: 2;
 }
 
-.cert-preview-text span {
-    font-size: 14px;
+.cert-icon i {
+    font-size: 50px;
+    color: #7d2ae8;
+}
 
+/* CERTIFICATE TEXT */
+
+.cert-preview-text {
+    position: relative;
+    z-index: 5;
+
+    min-width: 0;
+    flex: 1;
+}
+
+.cert-preview-text > span {
+    display: block;
+
+    font-size: 14px;
     letter-spacing: 3px;
 
     color: #7d2ae8;
@@ -659,17 +569,13 @@ section {
     color: #111;
 }
 
-.cert-preview-text h2 span {
+.cert-preview-text h2 span,
+.cert-preview-text h2 strong {
     color: #7d2ae8;
-
-    font-size: inherit;
-
-    letter-spacing: 0;
 }
 
 .cert-preview-text p {
     font-size: 17px;
-
     color: #555;
 
     max-width: 600px;
@@ -679,10 +585,13 @@ section {
     margin-bottom: 25px;
 }
 
+/* CERTIFICATE BUTTON */
+
 .cert-btn {
     display: inline-flex;
 
     align-items: center;
+    justify-content: center;
 
     gap: 10px;
 
@@ -699,6 +608,8 @@ section {
     font-weight: 600;
 
     transition: 0.3s;
+
+    max-width: 100%;
 }
 
 .cert-btn:hover {
@@ -712,11 +623,12 @@ section {
     font-size: 20px;
 }
 
+/* DECORATION */
+
 .cert-decoration {
     position: absolute;
 
     right: -20px;
-
     bottom: -35px;
 
     display: flex;
@@ -730,7 +642,6 @@ section {
 
 .cert-decoration i {
     font-size: 150px;
-
     color: #7d2ae8;
 }
 
@@ -742,7 +653,6 @@ section {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 25px;
@@ -752,7 +662,6 @@ section {
 
 .creative-title h2 {
     font-size: 48px;
-
     font-weight: 700;
 }
 
@@ -762,7 +671,6 @@ section {
 
 .star-line {
     width: 140px;
-
     height: 4px;
 
     background:
@@ -783,7 +691,6 @@ section {
     position: absolute;
 
     right: -10px;
-
     top: -14px;
 
     color: #7d2ae8;
@@ -793,9 +700,7 @@ section {
 
 .edu-container {
     display: flex;
-
     flex-direction: column;
-
     gap: 40px;
 }
 
@@ -860,7 +765,6 @@ section {
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     border-radius: 50%;
@@ -875,7 +779,6 @@ section {
 
 .edu-content {
     position: relative;
-
     z-index: 1;
 }
 
@@ -889,13 +792,11 @@ section {
 
 .edu-content h3 {
     margin: 10px 0;
-
     font-size: 28px;
 }
 
 .edu-content p {
     line-height: 1.8;
-
     color: #555;
 }
 
@@ -907,7 +808,6 @@ section {
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
 
     cursor: pointer;
@@ -947,7 +847,6 @@ section {
 
 .sem-box:hover {
     transform: translateX(8px);
-
     background: #efe5ff;
 }
 
@@ -1022,7 +921,6 @@ section {
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     margin: 80px 0;
@@ -1057,6 +955,7 @@ section {
 ========================= */
 
 .contact form {
+    width: 100%;
     max-width: 800px;
 
     margin: auto;
@@ -1064,7 +963,6 @@ section {
 
 .input-box {
     display: flex;
-
     gap: 20px;
 }
 
@@ -1092,6 +990,8 @@ textarea {
 ========================= */
 
 .footer {
+    width: 100%;
+
     text-align: center;
 
     padding: 20px;
@@ -1101,9 +1001,9 @@ textarea {
     color: white;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* =====================================================
+   TABLET
+===================================================== */
 
 @media (max-width: 1000px) {
 
@@ -1133,11 +1033,38 @@ textarea {
         width: 270px;
         height: 270px;
     }
+
+    .cert-preview-content {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .cert-preview-text h2 {
+        font-size: 36px;
+    }
 }
+
+/* =====================================================
+   MOBILE
+===================================================== */
 
 @media (max-width: 768px) {
 
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden !important;
+    }
+
+    * {
+        max-width: 100%;
+    }
+
+    /* NAVBAR */
+
     .header {
+        width: 100%;
         padding: 18px 5%;
     }
 
@@ -1145,34 +1072,64 @@ textarea {
         display: none;
     }
 
+    /* COMMON SECTION */
+
     section {
-        padding: 110px 5% 50px;
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+
+        padding: 100px 5% 50px;
+
+        overflow: hidden;
     }
 
+    /* HOME */
+
     .home {
+        width: 100%;
+
         flex-direction: column-reverse;
 
         text-align: center;
 
-        padding-top: 140px;
+        gap: 40px;
+
+        padding-top: 130px;
     }
 
     .home-content {
+        width: 100%;
         max-width: 100%;
-    }
-
-    .home-content h3 {
-        font-size: 24px;
     }
 
     .home-content h1 {
         font-size: 45px;
     }
 
-    .name {
-        font-size: 55px;
+    .home-content h3 {
+        font-size: 24px;
+    }
 
-        letter-spacing: 3px;
+    .home-content p {
+        font-size: 15px;
+    }
+
+    .name {
+        max-width: 100%;
+
+        font-size: 42px;
+
+        letter-spacing: 2px;
+
+        word-break: break-word;
+    }
+
+    /* PROFILE */
+
+    .home-img {
+        width: 100%;
+        max-width: 100%;
     }
 
     .home-img::before {
@@ -1190,253 +1147,443 @@ textarea {
         height: 230px;
     }
 
+    /* SOCIAL */
+
+    .social-media a {
+        margin-right: 8px;
+    }
+
+    /* HEADINGS */
+
     .heading {
         font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    /* SKILLS */
+
+    .skills-container {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .skill-box {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    /* PROJECTS */
+
+    .projects-wrapper {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 25px;
+
+        margin-top: 2rem;
+    }
+
+    .project-container {
+        width: 100%;
     }
 
     .project-box {
         width: 100%;
+        max-width: 100%;
+
         height: 230px;
     }
 
-    .projects-wrapper {
-        margin-top: 2rem;
+    .project-layer {
+        padding: 1.3rem;
     }
 
-    /* =========================================
-   CERTIFICATION PREVIEW - WHITE THEME
-========================================= */
+    .project-layer h4 {
+        font-size: 1.5rem;
+    }
 
-.certification-preview {
+    .project-layer p {
+        font-size: 0.85rem;
+    }
 
-    padding: 7rem 9%;
+    /* =================================================
+       CERTIFICATION PREVIEW - MOBILE FIX
+    ================================================= */
 
-    background: #ffffff;
+    .certification-preview {
+        width: 100%;
+        max-width: 100%;
 
+        padding: 70px 5%;
+
+        overflow: hidden;
+    }
+
+    .cert-preview-content {
+        width: 100%;
+        max-width: 100%;
+
+        min-height: auto;
+
+        margin: 0 auto;
+
+        padding: 35px 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 25px;
+
+        border-radius: 28px;
+
+        overflow: hidden;
+
+        box-sizing: border-box;
+    }
+
+    /* ICON */
+
+    .cert-icon {
+        width: 105px;
+        min-width: 105px;
+
+        height: 105px;
+
+        flex-shrink: 0;
+    }
+
+    .cert-icon i {
+        font-size: 45px;
+    }
+
+    /* TEXT */
+
+    .cert-preview-text {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        overflow: hidden;
+    }
+
+    .cert-preview-text > span {
+        display: block;
+
+        width: 100%;
+
+        font-size: 11px;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 10px;
+
+        line-height: 1.5;
+    }
+
+    .cert-preview-text h2 {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 30px;
+
+        line-height: 1.2;
+
+        margin: 8px 0 15px;
+
+        word-break: normal;
+
+        overflow-wrap: anywhere;
+    }
+
+    .cert-preview-text p {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 15px;
+
+        line-height: 1.6;
+
+        margin-bottom: 20px;
+
+        overflow-wrap: anywhere;
+    }
+
+    /* BUTTON */
+
+    .cert-btn {
+        display: inline-flex;
+
+        max-width: 100%;
+
+        padding: 12px 20px;
+
+        font-size: 14px;
+
+        white-space: normal;
+
+        text-align: center;
+    }
+
+    /* DECORATION */
+
+    .cert-decoration {
+        right: -60px;
+
+        bottom: -30px;
+
+        gap: 5px;
+
+        transform: rotate(-10deg);
+    }
+
+    .cert-decoration i {
+        font-size: 100px;
+    }
+
+    /* =================================================
+       EDUCATION
+    ================================================= */
+
+    .creative-title {
+        gap: 10px;
+
+        margin-bottom: 40px;
+    }
+
+    .creative-title h2 {
+        font-size: 32px;
+
+        text-align: center;
+    }
+
+    .star-line {
+        width: 60px;
+    }
+
+    .edu-container {
+        width: 100%;
+
+        gap: 25px;
+    }
+
+    .edu-card {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 25px 20px;
+
+        gap: 20px;
+    }
+
+    .edu-icon {
+        min-width: 70px;
+
+        width: 70px;
+
+        height: 70px;
+
+        font-size: 30px;
+    }
+
+    .edu-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .edu-content h3 {
+        font-size: 22px;
+    }
+
+    .edu-content p {
+        font-size: 14px;
+    }
+
+    /* SEMESTERS */
+
+    .semester-details {
+        width: 100%;
+    }
+
+    .sem-box {
+        width: 100%;
+
+        gap: 10px;
+
+        flex-wrap: wrap;
+
+        font-size: 14px;
+    }
+
+    /* PERCENTAGE */
+
+    .percentage-box {
+        width: 100%;
+    }
+
+    .percentage-info {
+        font-size: 13px;
+    }
+
+    /* DIVIDER */
+
+    .section-divider {
+        width: 100%;
+
+        margin: 50px 0;
+    }
+
+    .section-divider::before,
+    .section-divider::after {
+        width: 25%;
+    }
+
+    .section-divider span {
+        margin: 0 10px;
+
+        font-size: 24px;
+    }
+
+    /* CONTACT */
+
+    .contact form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .input-box {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    .input-box input,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        width: 100%;
+
+        padding: 20px 10px;
+    }
 }
 
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
 
-/* MAIN CARD */
+@media (max-width: 480px) {
 
-.cert-preview-content {
+    .logo {
+        font-size: 24px;
+    }
 
-    max-width: 1100px;
+    .home {
+        padding-top: 120px;
+    }
 
-    min-height: 350px;
+    .home-content h1 {
+        font-size: 36px;
+    }
 
-    margin: auto;
+    .home-content h3 {
+        font-size: 20px;
+    }
 
-    padding: 4rem 5rem;
+    .name {
+        font-size: 34px;
+        letter-spacing: 1px;
+    }
 
-    border-radius: 35px;
+    .home-img::before {
+        width: 245px;
+        height: 245px;
+    }
 
-    position: relative;
+    .home-img::after {
+        width: 220px;
+        height: 220px;
+    }
 
-    overflow: hidden;
+    .home-img img {
+        width: 200px;
+        height: 200px;
+    }
 
-    display: flex;
+    .heading {
+        font-size: 30px;
+    }
 
-    align-items: center;
+    /* CERTIFICATION */
 
-    gap: 4rem;
+    .certification-preview {
+        padding: 60px 4%;
+    }
 
-    background: #ffffff;
+    .cert-preview-content {
+        padding: 30px 15px;
 
-    border: 2px solid rgba(125,42,232,0.25);
+        border-radius: 24px;
 
-    box-shadow:
-        0 10px 40px rgba(125,42,232,0.12),
-        0 0 25px rgba(125,42,232,0.08);
+        gap: 20px;
+    }
 
-    transition: .4s ease;
+    .cert-icon {
+        width: 90px;
+        min-width: 90px;
+        height: 90px;
+    }
 
+    .cert-icon i {
+        font-size: 38px;
+    }
+
+    .cert-preview-text > span {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .cert-preview-text h2 {
+        font-size: 26px;
+    }
+
+    .cert-preview-text p {
+        font-size: 14px;
+    }
+
+    .cert-btn {
+        font-size: 13px;
+        padding: 11px 17px;
+    }
+
+    .creative-title h2 {
+        font-size: 27px;
+    }
+
+    .edu-card {
+        padding: 20px 15px;
+    }
+
+    .project-box {
+        height: 210px;
+    }
 }
-
-
-/* HOVER */
-
-.cert-preview-content:hover {
-
-    transform: translateY(-8px);
-
-    border-color: #7d2ae8;
-
-    box-shadow:
-        0 15px 50px rgba(125,42,232,0.18),
-        0 0 35px rgba(125,42,232,0.12);
-
-}
-
-
-/* =========================================
-   LEFT CERTIFICATE ICON
-========================================= */
-
-.cert-icon {
-
-    min-width: 120px;
-
-    height: 120px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    border-radius: 50%;
-
-    background: #ffffff;
-
-    border: 3px solid #7d2ae8;
-
-    box-shadow:
-        0 0 20px rgba(125,42,232,0.25),
-        inset 0 0 20px rgba(125,42,232,0.08);
-
-    position: relative;
-
-    z-index: 2;
-
-}
-
-
-/* ICON */
-
-.cert-icon i {
-
-    font-size: 5rem;
-
-    color: #7d2ae8;
-
-}
-
-
-/* =========================================
-   TEXT
-========================================= */
-
-.cert-preview-text {
-
-    position: relative;
-
-    z-index: 5;
-
-}
-
-
-/* SMALL TITLE */
-
-.cert-preview-text > span {
-
-    display: block;
-
-    font-size: 1.2rem;
-
-    letter-spacing: 4px;
-
-    color: #7d2ae8;
-
-    font-weight: 700;
-
-    margin-bottom: 12px;
-
-}
-
-
-/* MAIN TITLE */
-
-.cert-preview-text h2 {
-
-    font-size: 4rem;
-
-    margin: .5rem 0 1rem;
-
-    color: #111111;
-
-    font-weight: 700;
-
-}
-
-
-/* PURPLE WORD */
-
-.cert-preview-text h2 strong {
-
-    color: #7d2ae8;
-
-}
-
-
-/* DESCRIPTION */
-
-.cert-preview-text p {
-
-    font-size: 1.3rem;
-
-    color: #555555;
-
-    max-width: 600px;
-
-    line-height: 1.7;
-
-    margin-bottom: 2rem;
-
-}
-
-
-/* =========================================
-   SEE CERTIFICATES BUTTON
-========================================= */
-
-.cert-btn {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: .7rem;
-
-    padding: 1.1rem 2.2rem;
-
-    border-radius: 30px;
-
-    background: #7d2ae8;
-
-    color: #ffffff;
-
-    font-size: 1.2rem;
-
-    font-weight: 600;
-
-    text-decoration: none;
-
-    box-shadow:
-        0 8px 25px rgba(125,42,232,0.3);
-
-    transition: .3s ease;
-
-}
-
-
-/* BUTTON HOVER */
-
-.cert-btn:hover {
-
-    transform: translateY(-4px);
-
-    background: #6a20ca;
-
-    box-shadow:
-        0 12px 30px rgba(125,42,232,0.4);
-
-}
-
-
-/* ARROW */
-
-.cert-btn i {
-
-    f
