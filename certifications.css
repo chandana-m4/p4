@@ -1,0 +1,447 @@
+/* =========================================
+   CERTIFICATIONS SECTION
+========================================= */
+
+.certificates {
+    width: 100%;
+    padding: 80px 5% 80px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.certificates h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #7d2ae8;
+}
+
+.certificates h2 span {
+    color: #111;
+}
+
+
+/* =========================================
+   CERTIFICATE GRID
+========================================= */
+
+.certificate-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 35px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   CERTIFICATE CARD
+========================================= */
+
+.certificate-card {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    background: #ffffff;
+
+    border: 3px solid #7d2ae8;
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 10px 30px rgba(125, 42, 232, 0.12);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 40px rgba(125, 42, 232, 0.22);
+}
+
+
+/* =========================================
+   CERTIFICATE NUMBER
+========================================= */
+
+.number {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #7d2ae8;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    z-index: 5;
+
+    box-shadow: 0 5px 15px rgba(125, 42, 232, 0.3);
+}
+
+
+/* =========================================
+   CERTIFICATE IMAGE
+========================================= */
+
+.certificate-image {
+    width: 100%;
+    height: 240px;
+
+    display: block;
+
+    object-fit: contain;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    padding: 12px;
+}
+
+
+/* =========================================
+   CERTIFICATE INFORMATION
+========================================= */
+
+.certificate-info {
+    width: 100%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: #ffffff;
+}
+
+.certificate-info h3 {
+    margin: 0 0 10px;
+
+    color: #7d2ae8;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+}
+
+.certificate-info p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================
+   CERTIFICATE BUTTON / LINK
+========================================= */
+
+.certificate-info a {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 9px 18px;
+
+    border-radius: 20px;
+
+    background: #7d2ae8;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.certificate-info a:hover {
+    background: #5f1fc2;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .certificate-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 25px;
+    }
+
+    .certificates {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .certificates {
+        width: 100%;
+
+        padding: 50px 15px 60px;
+
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .certificates h2 {
+        font-size: 32px;
+
+        margin-bottom: 35px;
+    }
+
+
+    /* ONE CARD PER ROW */
+
+    .certificate-grid {
+        width: 100%;
+        max-width: 100%;
+
+        display: grid;
+
+        grid-template-columns: minmax(0, 1fr);
+
+        gap: 25px;
+
+        padding: 0;
+
+        margin: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    /* CARD MUST FIT MOBILE SCREEN */
+
+    .certificate-card {
+        width: 100%;
+        max-width: 100%;
+
+        min-width: 0;
+
+        margin: 0;
+
+        border-radius: 22px;
+
+        overflow: hidden;
+
+        box-sizing: border-box;
+    }
+
+
+    /* MOBILE CERTIFICATE IMAGE */
+
+    .certificate-image {
+        width: 100%;
+        max-width: 100%;
+
+        height: 220px;
+
+        padding: 10px;
+
+        object-fit: contain;
+
+        display: block;
+
+        box-sizing: border-box;
+    }
+
+
+    /* MOBILE NUMBER */
+
+    .number {
+        top: 10px;
+        left: 10px;
+
+        width: 34px;
+        height: 34px;
+
+        font-size: 13px;
+    }
+
+
+    /* MOBILE TEXT */
+
+    .certificate-info {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 18px 15px;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+    }
+
+    .certificate-info h3 {
+        font-size: 18px;
+
+        line-height: 1.4;
+
+        margin-bottom: 8px;
+
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .certificate-info p {
+        font-size: 13px;
+
+        line-height: 1.5;
+
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .certificate-info a {
+        font-size: 13px;
+
+        padding: 8px 16px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .certificates {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .certificates h2 {
+        font-size: 28px;
+    }
+
+    .certificate-grid {
+        gap: 20px;
+    }
+
+    .certificate-card {
+        border-width: 2px;
+        border-radius: 18px;
+    }
+
+    .certificate-image {
+        height: 190px;
+
+        padding: 8px;
+    }
+
+    .certificate-info {
+        padding: 15px 12px;
+    }
+
+    .certificate-info h3 {
+        font-size: 16px;
+    }
+
+    .certificate-info p {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================
+   CERTIFICATE MODAL
+========================================= */
+
+.certificate-modal {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    z-index: 9999;
+
+    box-sizing: border-box;
+}
+
+.certificate-modal.active {
+    display: flex;
+}
+
+.certificate-modal img {
+    max-width: 95%;
+    max-height: 90vh;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================================
+   GLOBAL MOBILE OVERFLOW FIX
+========================================= */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
