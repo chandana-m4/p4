@@ -444,4 +444,58 @@ html,
 body {
     max-width: 100%;
     overflow-x: hidden;
+} 
+/* ================= MOBILE RESPONSIVE FIX ================= */
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .container,
+    .home,
+    .about,
+    .projects,
+    .certifications,
+    .contact {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .home-container,
+    .about-container,
+    .projects-container,
+    .certifications-container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card,
+    .project-card,
+    .certificate-card,
+    .certification-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button,
+    a {
+        max-width: 100%;
+    }
 }
